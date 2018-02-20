@@ -133,6 +133,7 @@ header {
 	color: #000;
 	/*padding-top: 50px;*/
 	margin-bottom: 0px; 
+	margin-left: 15px;
 }
 
 .header__info-container {
@@ -257,13 +258,6 @@ header {
 
 .top_nav-none {
 	display: none;
-}
-
-.top_home_link .top_home_logo {
-    background: url(../img/logomain.png) no-repeat 50% / contain;
-    height: 45px;
-    width: 45px;
-    margin-right: 10px
 }
 
 .header__navlogo {
@@ -649,6 +643,14 @@ header {
 	background: url(../img/bg2.png) no-repeat center;
 	background-size: cover;
 	color: #fff;
+}
+
+.quiz__red {
+	color: #f9293d;
+}
+
+.quiz__black {
+	color: black;
 }
 
 .quiz__container h2 {
@@ -1189,6 +1191,7 @@ input[type="radio"] {
 
 
 .reviews h2 {
+	font-family: 'FontfabricMullerBold', sans-serif;
 	margin-top: 55px;
 	margin-bottom: 45px;
 	letter-spacing: 0.05em;

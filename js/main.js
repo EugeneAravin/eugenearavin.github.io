@@ -132,54 +132,6 @@ window.onload = function(){
 
 new Clipboard('.btn-clipboard');
 
-// jQuery(function(f){
-//     var element = f('#top_nav');
-//     f(window).scroll(function(){
-//         element['fade'+ (f(this).scrollTop() > 200 ? 'Out': 'In')](1);          
-//     });
-// });
-
-
-// var h_hght = 150; // высота шапки
-// var h_mrg = 0;    // отступ когда шапка уже не видна
-                 
-// $(function(){
- 
-//     var elem = $('#top_nav');
-//     var top = $(this).scrollTop();
-     
-//     if(top > h_hght){
-//         elem.css('top', h_mrg);
-
-//     }           
-     
-//     $(window).scroll(function(){
-//         top = $(this).scrollTop();
-         
-//         if (top+h_mrg < h_hght) {
-//             elem.css('top', (h_hght-top));
-//         } else {
-//             elem.css('top', h_mrg);
-//         }
-//     });
- 
-// });
-
-
-// jQuery(function(f){
-//     var element = f('#top_nav-second');
-//     f(window).scroll(function(){
-//         element['fade'+ (f(this).scrollTop() > 200 ? 'In': 'Out')](1);       
-//     });
-// });
-
-
-// $(window).scroll(function(){
-// if($(window).scrollTop()>100){
-// $('#top_nav-second').show()
-// }
-// })
-
 
 $(document).ready(function() {
   
@@ -211,3 +163,13 @@ AOS.init({
 AOS.init({ 
     disable: 'mobile' 
 });
+
+
+
+$('.collapse').on('shown.bs.collapse', function(e) {
+  var $card = $(this).closest('.card');
+  $('html,body').animate({
+    scrollTop: $card.offset().top - 50
+  }, 500);
+});
+
